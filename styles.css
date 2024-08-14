@@ -1,0 +1,101 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  text-align: center;
+  overflow: hidden;
+  transition: background-color 1.5s ease;
+  /* เพิ่มการเปลี่ยนสีพื้นหลัง */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 90%;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+button {
+  padding: 0px 40px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 100px;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+button#yesButton {
+  background-color: #4CAF50;
+}
+
+button#noButton {
+  background-color: #f44336;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.image-container {
+  display: none;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 2s ease;
+  /* เพิ่มการเปลี่ยนแปลงของความโปร่งใส */
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  /* เพิ่มมุมโค้งให้กับภาพ */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* เพิ่มเงาให้กับภาพ */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
