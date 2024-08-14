@@ -135,13 +135,10 @@
       const imageContainer = document.querySelector('.image-container');
       imageContainer.style.display = 'block';
 
-      // ใช้ setTimeout เพื่อหน่วงเวลาการแสดงผล
       setTimeout(function () {
-        imageContainer.style.opacity = 1; // ทำให้ภาพค่อยๆ เฟดขึ้น
-      }, 100); // หน่วงเวลา 100 มิลลิวินาที
-
-      // เปลี่ยนพื้นหลังเป็นสีชมพู
-      document.body.style.backgroundColor = '#ff69b4'; // สีชมพู
+        imageContainer.style.opacity = 1;
+      }, 100);
+      document.body.style.backgroundColor = '#ff69b4';
     });
 
     document.getElementById('noButton').addEventListener('click', function () {
